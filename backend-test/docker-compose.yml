@@ -13,5 +13,17 @@ services:
       - '5432'
     volumes:
       - test:/var/lib/postgres
+  prod:
+    container_name: nestjs_app
+    image: nestjs-app
+    build:
+      context: .
+      target: production
+      dockerfile: ./Dockerfile
+    command: npm run start:prod
+    ports:
+      - 3000:3000
+    restart: unless-stopped
+
 volumes:
   test:
