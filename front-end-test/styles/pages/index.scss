@@ -1,0 +1,76 @@
+.page_warpper {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 30px;
+    width: 100%;
+    .card {
+        padding: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        background-color: #ffffff;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23fb923c' fill-opacity='1' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+        font-style: italic;
+        font-size: 20px;
+        text-transform: capitalize;
+        box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+        cursor: grab;
+        transition: all 0.5s ease-in-out;
+        &:hover {
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+        }
+    }
+}
+
+@media (max-width: 950px) {
+    .page_warpper {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 750px) {
+    .page_warpper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 550px) {
+    .page_warpper {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.btn_container {
+    width: 100%;
+
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .btn {
+        background-color: $light_secobdary;
+        padding: 7px;
+        border: none;
+        border-radius: 8px;
+        color: #fff;
+        font-size: 18px;
+
+        &:hover {
+            background: transparent;
+            color: $light_secobdary;
+            border: 1px solid $light_secobdary;
+        }
+    }
+}
+
+.modal_content {
+    padding: 10px;
+}
+
+.modal_text {
+    width: 100%;
+    padding: 10px;
+}

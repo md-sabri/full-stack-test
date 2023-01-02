@@ -1,0 +1,26 @@
+@import "../_vars/colors";
+
+header {
+    width: 100%;
+    height: 65px;
+    display: flex;
+    .logo {
+        width: 150px;
+        height: 65px;
+        padding: 5px;
+        margin-left: 30px;
+    }
+    img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .title {
+        display: flex;
+        align-items: center;
+        padding: 0px 20px;
+        font-size: 28px;
+        color: $light_secobdary;
+        font-style: italic;
+    }
+}
